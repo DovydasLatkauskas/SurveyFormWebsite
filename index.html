@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Weight training survey</h1>
-    <p>Thank you for taking the time answer our questions!</p>
-    <form>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form method="post">
       <fieldset> <!-- first 4 input fields -->
-        <label>Name<input type="text"></label>
-        <label><input></label>
-        <label><input></label>
-        <label><input></label>
+        <label for="first-name">Name<input type="text" id="first-name" required></label>
+        <label for="email">Email<input type="email" id="email" required></label>
+        <label for="age">Age <span>(optional)</span><input type="number" id="age"></label>
+        <label for="training-experience">For how long have you been training?
+          <select id="training-experience" name=""training-experience"">
+            <option value="">(select one)</option>
+            <option value="1">less than 3 months</option>
+            <option value="2">3 to 6 months</option>
+            <option value="3">6 to 12 months</option>
+            <option value="4">1 to 2 years</option>
+            <option value="5">2 to 4 years</option>
+            <option value="6"> more than 4 years</option>
+          </select>
+        </label>
       </fieldset>
       <fieldset> <!-- 3 radio options -->
 
@@ -28,7 +38,7 @@
       <fieldset> <!-- text box -->
 
       </fieldset>
-      <input type="submit">
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>
