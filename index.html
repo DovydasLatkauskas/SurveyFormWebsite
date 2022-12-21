@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
+    <h1>Weight Training Survey</h1>
+    <p>Thank you for taking the time to anser our questions!</p>
     <form method="post">
       <fieldset> <!-- first 4 input fields -->
         <label for="first-name">Name<input type="text" id="first-name" required></label>
@@ -27,13 +27,22 @@
         </label>
       </fieldset>
       <fieldset> <!-- 3 radio options -->
-
+        <label><input type="radio" id="male" required name="gender"> Male</label>
+        <label><input type="radio" id="male" required name="gender"> Female</label>
       </fieldset>
       <fieldset> <!-- select from list -->
-
+        <label for="training-frequency">How many times do you train per week>
+          <select id="training-frequency" name="training-frequency">
+            <option value="">(select one)</option>
+            <option value="1">1-2</option>
+            <option value="2">3-4</option>
+            <option value="3">5-6</option>
+            <option value="4">7 or more</option>
+          </select>
+        </label>
       </fieldset>
-      <fieldset> <!-- check all that apply -->
-
+      <fieldset> <!-- check all that apply, types of training splits one does -->
+        <label><input type="checkbox"></label>
       </fieldset>
       <fieldset> <!-- text box -->
 
