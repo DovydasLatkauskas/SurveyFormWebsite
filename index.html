@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Weight Training Survey</h1>
+    <header>
+      <h1>Weight Training Survey</h1>
     <p>Thank you for taking the time to anser our questions!</p>
+    </header>
     <form method="post">
-      <fieldset> <!-- first 4 input fields -->
+      <fieldset id="first-fieldset"> <!-- first 4 input fields -->
         <label for="first-name">Name<input type="text" id="first-name" required></label>
         <label for="email">Email<input type="email" id="email" required></label>
         <label for="age">Age <span>(optional)</span><input type="number" id="age"></label>
@@ -41,7 +43,7 @@
           </select>
         </label>
       </fieldset>
-      <fieldset> <!-- check all that apply, types of training splits one does -->
+      <fieldset id="third-fieldset"> <!-- check all that apply, types of training splits one does -->
         <p>What kind of training splits do you like?</p>
         <label for="full-body"><input type="checkbox" id="full-body" name="training-split">full body split</label>
         <label for="upper-lower"><input type="checkbox" id="upper-lower" name="training-split">upper/lower split</label>
@@ -49,9 +51,10 @@
         <label for="body-part-split"><input type="checkbox" id="body-part-split" name="training-split">body part split</label>
         <label for="other-split"><input type="checkbox" id="other-split" name="training-split">other</label>
       </fieldset>
-      <fieldset> <!-- text box -->
-        <p>What got you into weight training and why are you still doing it?</p>
-        <textarea placeholder="Type your answer here..." rows="4" cols="40" id=""></textarea>
+      <fieldset id="fourth-fieldset"> <!-- text box -->
+        <label for="answer-box">What got you into weight training and why are you still doing it?
+          <textarea placeholder="Type your answer here..." rows="4" cols="40" id="answer-box"></textarea>
+        </label>
       </fieldset>
       <input type="submit" value="Submit">
     </form>
