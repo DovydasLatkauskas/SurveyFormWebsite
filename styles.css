@@ -31,6 +31,11 @@ body{
     border:none;
   }
   
+  #first-fieldset input, select{
+    margin-bottom:20px;
+    height:30px;
+  }
+  
   label, #splits-p{
     margin-left:2em;
   }
@@ -48,5 +53,4 @@ body{
     width:60%;
     margin:-60px auto 0 auto;
     height: 3em;
-  
   }
