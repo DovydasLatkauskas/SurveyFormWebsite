@@ -1,0 +1,52 @@
+body{
+    background-image: url(https://imgs.search.brave.com/2G6OdDek0se5E7te3sT9vrpt0mNxUb_um6VUgBZhrrw/rs:fit:1200:900:1/g:ce/aHR0cHM6Ly9pbWcx/LmNvb2tpbmdsaWdo/dC50aW1laW5jLm5l/dC9zaXRlcy9kZWZh/dWx0L2ZpbGVzL3N0/eWxlcy80XzNfaG9y/aXpvbnRhbF8tXzEy/MDB4OTAwL3B1Ymxp/Yy9pbWFnZS8yMDE3/LzExL21haW4vd29t/YW4tbGlmdGluZy13/ZWlnaHRzLWdldHR5/LmpwZz9pdG9rPWNE/OUY4aDRR);
+    color:rgb(243,243,243);
+    font-family:Poppins, sans-serif;
+  }
+  
+  header{
+    text-align:center;
+  }
+  #title{
+    padding-top:20px;
+  }
+  #description{
+    font-style:italic;
+  }
+  
+  form{
+    max-width:800px;
+    margin:auto;
+  }
+  
+  #first-fieldset{
+    padding-top:30px;
+  }
+  #fourth-fieldset{
+    padding-bottom:90px;
+  }
+  
+  fieldset{
+    background-color: rgb(50,50,50);
+    border:none;
+  }
+  
+  label, #splits-p{
+    margin-left:2em;
+  }
+  
+  #first-fieldset input, select, textarea{
+    display:block;
+    width:90%;
+    margin-left:2.5em;
+  }
+  #third-fieldset label, input[type="submit"]{
+    display:block;
+  }
+  
+  input[type="submit"]{
+    width:60%;
+    margin:-60px auto 0 auto;
+    height: 3em;
+  
+  }
