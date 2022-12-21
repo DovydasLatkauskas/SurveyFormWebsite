@@ -8,16 +8,16 @@
   </head>
   <body>
     <header>
-      <h1>Weight Training Survey</h1>
-    <p>Thank you for taking the time to anser our questions!</p>
+      <h1 id="title">Weight Training Survey</h1>
+    <p id="description">Thank you for taking the time to anser our questions!</p>
     </header>
-    <form method="post">
+    <form method="post" id="survey-form">
       <fieldset id="first-fieldset"> <!-- first 4 input fields -->
-        <label for="first-name">Name<input type="text" id="first-name" required></label>
-        <label for="email">Email<input type="email" id="email" required></label>
-        <label for="age">Age <span>(optional)</span><input type="number" id="age"></label>
-        <label for="training-experience">For how long have you been training?
-          <select id="training-experience" name=""training-experience"">
+        <label for="name" id="name-label">Name<input type="text" id="name" required placeholder="your name"></label>
+        <label for="email" id="email-label">Email<input type="email" id="email" required placeholder="your email"></label>
+        <label for="number" id="number-label">Age <span>(optional)</span><input type="number" id="number" min="14" max="110" placeholder="your age"></label>
+        <label for="dropdown">For how long have you been training?
+          <select id="dropdown" name=""training-experience"">
             <option value="">(select one)</option>
             <option value="1">less than 3 months</option>
             <option value="2">3 to 6 months</option>
@@ -29,8 +29,8 @@
         </label>
       </fieldset>
       <fieldset> <!-- 3 radio options -->
-        <label><input type="radio" id="male" required name="gender"> Male</label>
-        <label><input type="radio" id="male" required name="gender"> Female</label>
+        <label for="male"><input type="radio" id="male" required name="gender" value="male"> Male</label>
+        <label for="female"><input type="radio" id="male" required name="gender" value="female"> Female</label>
       </fieldset>
       <fieldset> <!-- select from list -->
         <label for="training-frequency">How many times do you train per week>
@@ -44,19 +44,19 @@
         </label>
       </fieldset>
       <fieldset id="third-fieldset"> <!-- check all that apply, types of training splits one does -->
-        <p>What kind of training splits do you like?</p>
-        <label for="full-body"><input type="checkbox" id="full-body" name="training-split">full body split</label>
-        <label for="upper-lower"><input type="checkbox" id="upper-lower" name="training-split">upper/lower split</label>
-        <label for="push-pull-legs"><input type="checkbox" id="push-pull-legs" name="training-split">push pull legs</label>
-        <label for="body-part-split"><input type="checkbox" id="body-part-split" name="training-split">body part split</label>
-        <label for="other-split"><input type="checkbox" id="other-split" name="training-split">other</label>
+        <p id="splits-p">What kind of training splits do you like?</p>
+        <label for="full-body"><input type="checkbox" id="full-body" name="training-split" value="1">full body split</label>
+        <label for="upper-lower"><input type="checkbox" id="upper-lower" name="training-split" value="2">upper/lower split</label>
+        <label for="push-pull-legs"><input type="checkbox" id="push-pull-legs" name="training-split" value="3">push pull legs</label>
+        <label for="body-part-split"><input type="checkbox" id="body-part-split" name="training-split" value="4">body part split</label>
+        <label for="other-split"><input type="checkbox" id="other-split" name="training-split" value="5">other</label>
       </fieldset>
       <fieldset id="fourth-fieldset"> <!-- text box -->
         <label for="answer-box">What got you into weight training and why are you still doing it?
           <textarea placeholder="Type your answer here..." rows="4" cols="40" id="answer-box"></textarea>
         </label>
       </fieldset>
-      <input type="submit" value="Submit">
+      <input type="submit" id="submit" value="Submit">
     </form>
   </body>
 </html>
